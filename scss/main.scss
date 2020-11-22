@@ -11,6 +11,7 @@ body {
   font-family: 'open sans';
 }
 
+//Basic Styling
 * {
   margin: 0;
 }
@@ -28,15 +29,6 @@ a {
   text-decoration: none;
 }
 
-//Background Image Styling
-// .bg-img {
-//   img {
-//     height: 1000px;
-//     position: absolute;
-//     z-index: -1;
-//   }
-// }
-
 //Logo Styling
 .logo {
   img {
@@ -50,7 +42,8 @@ a {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
   align-items: center;
-  // display: flex;
+
+  //Illustration Image
   .illustration {
     margin: 40px 0 0 200px;
     img {
@@ -59,17 +52,18 @@ a {
     }
   }
 
+  //Text along Illustration Image
   .txt {
     width: 60%;
     height: 300px;
     margin-top: 70px;
     margin-bottom: 40px;
-    // padding: 0 170px 0 170px;
     color: #fff;
     h1 {
-      // font-size: 40px;
       font-weight: 600;
     }
+
+    //Register Button
     .btn {
       position: relative;
       background: #fff;
@@ -83,6 +77,7 @@ a {
       opacity: 0.9;
     }
 
+    //Register Button Overlay
     .btn:after {
       content: '';
       position: absolute;
@@ -102,6 +97,7 @@ a {
       font-size: 18px;
     }
 
+    //Button Hover
     .btn:hover:after {
       transform: translateX(0);
     }
@@ -113,48 +109,7 @@ a {
   }
 }
 
-// .main-footer {
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   color: #fff;
-//   text-align: center;
-//   margin-top: 50px;
-//   font-size: 12px;
-//   p {
-//     margin: 6px;
-//     padding: 0;
-//   }
-//   a {
-//     color: #333;
-//   }
-
-//   .social {
-//     display: flex;
-//     position: absolute;
-//     right: 100px;
-//     bottom: 50px;
-//     .fab {
-//       color: #fff;
-//       font-size: 25px;
-//       width: 25px;
-//       height: 25px;
-//       padding: 10px;
-//       text-align: center;
-//       border: 2px solid #fff;
-//       border-radius: 50%;
-//       margin-right: 20px;
-//       transition: 0.5s;
-
-//       &:hover {
-//         color: $soft-Magenta;
-//         border-color: $soft-Magenta;
-//       }
-//     }
-//   }
-// }
-
+//Footer
 .main-footer {
   background: $soft-Magenta;
   display: flex;
@@ -164,11 +119,9 @@ a {
   position: fixed;
   bottom: 0;
   width: 100%;
+
+  //Social Media Icons
   .social {
-    // display: flex;
-    // position: absolute;
-    // right: 100px;
-    // bottom: 50px;
     .fab {
       color: #fff;
       font-size: 25px;
@@ -181,6 +134,7 @@ a {
       margin-right: 20px;
       transition: 0.5s;
 
+      //Social Media Icons hover
       &:hover {
         color: $violet;
         border-color: $violet;

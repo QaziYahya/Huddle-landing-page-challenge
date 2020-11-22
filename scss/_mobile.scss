@@ -1,3 +1,4 @@
+//Styling for tablets
 @media (max-width: 900px) {
   body {
     overflow-x: hidden;
@@ -6,23 +7,19 @@
     background-color: $violet;
   }
 
-  // .bg-img {
-  //   img {
-  //     height: 1300px;
-  //     position: absolute;
-  //     z-index: -1;
-  //   }
-  // }
-
+  //Logo styling for tablets
   .logo {
     img {
       margin: 70px 0 50px 100px;
     }
   }
+
   .illustrations-and-txt {
     grid-template-columns: 1fr;
     grid-gap: 0;
     margin: auto;
+
+    //Illustration Image Styling for tablets
     .illustration {
       margin: 40px 0 0 150px;
       img {
@@ -30,6 +27,8 @@
         height: auto;
       }
     }
+
+    //Text along Illustration Image styling for tablets
     .txt {
       text-align: center;
       width: 100%;
@@ -42,39 +41,26 @@
     }
   }
 
-  // .main-footer {
-  //   position: absolute;
-  //   bottom: 0;
-  //   top: 120%;
-  //   text-align: center;
-  //   padding-bottom: 80px;
-
-  //   .social {
-  //     position: absolute;
-  //     bottom: 0;
-  //     left: 0;
-  //     right: 0;
-  //     top: 110%;
-  //     display: flex;
-  //     justify-content: center;
-  //     margin-top: 50px;
-  //   }
-  // }
+  //Footer styling for tablets
   .main-footer {
     position: static;
   }
 }
 
+//Mobile devices
 @media (max-width: 650px) {
   body {
     background-size: 600px;
   }
+
+  //Logo styling for mobile devices
   .logo {
     img {
       margin: 70px 0 50px 50px;
     }
   }
   .illustrations-and-txt {
+    //Illustration image styling for mobile devices
     .illustration {
       margin: 40px 0 0 40px;
       img {
@@ -82,15 +68,20 @@
         height: auto;
       }
     }
+
+    ////Text along Illustration image styling for mobile devices
     .txt {
       text-align: center;
       width: 100%;
+      margin-left: 8px;
       p,
       h1 {
         padding: 0 10px;
       }
     }
   }
+
+  //Footer styling for mobile devices
   .main-footer {
     flex-direction: column;
     padding: 10px;
